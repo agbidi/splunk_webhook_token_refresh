@@ -29,9 +29,7 @@ SPLUNK_METRIC_INGEST_TOKEN='replace-with-splunk-ingest-token'
 ## Run
 
 ```sh
-set -a
-. ./.env
-set +a
+source .env
 python3 refresh_webhook_token.py --config config.json
 ```
 
